@@ -1,4 +1,11 @@
-const ProductPrice = () => {
+const ProductPrice = ({currency,setProductPrice}) => {
+  const handleChange = (e)=> {
+    if(currency === 'bd'){
+      setProductPrice(e.target.value * 125)
+    }else if(currency === 'qa'){
+      setProductPrice(e.target.value * 3.65)
+    }
+  }
   return (
     <div className="shippingCostPerKg">
       <label htmlFor="productPrice">Product Price </label>
@@ -6,6 +13,7 @@ const ProductPrice = () => {
         id="productPrice"
         type="number"
         placeholder="Shipping Cost Per KG"
+        onChange={handleChange}
       />
     </div>
   );

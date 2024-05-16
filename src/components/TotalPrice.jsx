@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const TotalPrice = () => {
+const TotalPrice = ({productSize,productPrice,shippingCostPerKg}) => {
+  const [data,setData] = useState(0)
+  const handleClick = () => {
+    let singleProductShippingCost = shippingCostPerKg / productSize;
+    let result = productPrice + singleProductShippingCost;
+    setData(result)
+  }
   return (
     <div>
-      <p>Total Price : </p>
+      <button onClick={handleClick}>Calculate Price</button>
+      <p>Total Price : {data}</p>
     </div>
   )
 }

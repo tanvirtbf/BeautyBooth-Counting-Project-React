@@ -1,4 +1,7 @@
-const ProductSize = () => {
+const ProductSize = ({setProductSize}) => {
+  const handleChange = (e) => {
+    setProductSize(1000/e.target.value)
+  }
   return (
     <div className="shippingCostPerKg">
       <label htmlFor="productSize">Product Size </label>
@@ -6,6 +9,7 @@ const ProductSize = () => {
         id="productSize"
         type="number"
         placeholder="Shipping Cost Per KG"
+        onChange={handleChange}
       />
     </div>
   );
