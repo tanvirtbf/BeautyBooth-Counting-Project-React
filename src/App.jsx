@@ -8,11 +8,12 @@ import Currency from "./components/Currency";
 
 function App() {
 
-  const [currency,setCurrency] = useState('bdt')
-  const [shippingCostPerKg,setShippingCostPerKg] = useState(0)
-  const [productPrice,setProductPrice] = useState(0)
-  const [productSize,setProductSize] = useState(0)
+  const [currency,setCurrency] = useState('bd')
+  const [shippingCostPerKg,setShippingCostPerKg] = useState("")
+  const [productPrice,setProductPrice] = useState("")
+  const [productSize,setProductSize] = useState("")
   
+
 
 
 
@@ -22,7 +23,7 @@ function App() {
       <ShippingCostPerKg setShippingCostPerKg={setShippingCostPerKg}/>
       <ProductPrice currency={currency} setProductPrice={setProductPrice}/>
       <ProductSize setProductSize={setProductSize}/>
-      <TotalPrice shippingCostPerKg={shippingCostPerKg} productPrice={productPrice} productSize={productSize}/>
+      <TotalPrice shippingCostPerKg={shippingCostPerKg} productPrice={productPrice} productSize={productSize} />
     </div>
   );
 }
