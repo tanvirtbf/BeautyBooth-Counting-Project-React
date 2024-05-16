@@ -6,12 +6,12 @@ import TotalPrice from "./components/TotalPrice";
 
 function App() {
   return (
-    <>
+    <div className="mainDiv">
       <ShippingCostPerKg />
       <ProductPrice />
       <ProductSize />
       <TotalPrice />
-    </>
+    </div>
   );
 }
 

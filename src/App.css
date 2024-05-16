@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.select{
+  padding: 10px;
+  border-radius: 7px;
+}
+
 .shippingCostPerKg{
   display: flex;
   justify-content:  flex-start;
