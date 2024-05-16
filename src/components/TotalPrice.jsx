@@ -8,7 +8,7 @@ const TotalPrice = ({ productSize, productPrice, shippingCostPerKg }) => {
     let singleProductShippingCost = shippingCostPerKg / productSize;
     let result = productPrice + singleProductShippingCost;
     setData(result);
-    if(productPrice==="" && shippingCostPerKg===""&&productSize===""){
+    if(productPrice==="" || shippingCostPerKg===""||productSize===""){
       setIsAllProductHere(false)
     }else{
       setIsAllProductHere(true)

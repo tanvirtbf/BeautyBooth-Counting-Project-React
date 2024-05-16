@@ -21,9 +21,9 @@
 
 .shippingCostPerKg{
   display: flex;
-  justify-content:  flex-start;
   gap: 10px;
   align-items: center;
+  justify-content: space-between;
 }
 .shippingCostPerKg input{
   padding: 10px;
