@@ -5,6 +5,21 @@
   text-align: center;
 }
 
+.shippingCostPerKg{
+  display: flex;
+  justify-content:  flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.shippingCostPerKg input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

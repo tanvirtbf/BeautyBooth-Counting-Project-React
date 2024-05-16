@@ -1,10 +1,16 @@
 import "./App.css";
-import ShippingCostPerKg from './components/ShippingCostPerKg'
+import ProductPrice from "./components/ProductPrice";
+import ProductSize from "./components/ProductSize";
+import ShippingCostPerKg from "./components/ShippingCostPerKg";
+import TotalPrice from "./components/TotalPrice";
 
 function App() {
   return (
     <>
       <ShippingCostPerKg />
+      <ProductPrice />
+      <ProductSize />
+      <TotalPrice />
     </>
   );
 }

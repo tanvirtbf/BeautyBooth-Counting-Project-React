@@ -2,8 +2,9 @@ import React from 'react'
 
 const ShippingCostPerKg = () => {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className='shippingCostPerKg'>
+      <label htmlFor="perKg">Shipping Cost Per KG</label>
+      <input id='perKg' type="number" placeholder='Shipping Cost Per KG' />
     </div>
   )
 }
