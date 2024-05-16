@@ -12,7 +12,7 @@ const ProductPrice = ({currency,setProductPrice}) => {
       <input
         id="productPrice"
         type="number"
-        placeholder="Shipping Cost Per KG"
+        placeholder="Amount in Doller $"
         onChange={handleChange}
       />
     </div>

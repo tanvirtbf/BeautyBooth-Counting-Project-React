@@ -8,7 +8,7 @@ const ProductSize = ({setProductSize}) => {
       <input
         id="productSize"
         type="number"
-        placeholder="Shipping Cost Per KG"
+        placeholder="ml or gm"
         onChange={handleChange}
       />
     </div>
