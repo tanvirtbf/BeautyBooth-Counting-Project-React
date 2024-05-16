@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const TotalPrice = ({productSize,productPrice,shippingCostPerKg}) => {
-  const [data,setData] = useState(0)
-  const [isClick,setIsClick] = useState(false)
-  const handleClick = () => {
-    let singleProductShippingCost = shippingCostPerKg / productSize;
-    let result = productPrice + singleProductShippingCost;
-    setData(result)
-    setIsClick(true)
-  }
+  const [data,setData] = useState()
 
+
+
+    useEffect(()=> {
+      let singleProductShippingCost = shippingCostPerKg / productSize;
+      let result = productPrice + singleProductShippingCost;
+      setData(result)
+    },[productSize,productPrice,shippingCostPerKg])
   return (
     <div>
-      <button onClick={handleClick}>Calculate Price</button>
-      {isClick ? <p>Total Price : {data}</p> : null}
+      {/* <button onClick={handleClick}>Calculate Price</button> */}
+      <p>Total Price : {data}</p>
     </div>
   )
 }
