@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: flex-start;
-  box-shadow: 0 4px 10px rgb(255,67,122);
+  box-shadow: 0 0px 10px rgb(255,67,122);
   border-radius: 10px;
   padding: 20px;
 }
