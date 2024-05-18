@@ -8,7 +8,7 @@ const ProductPrice = ({currency,setProductPrice}) => {
   }
   return (
     <div className="shippingCostPerKg">
-      <label htmlFor="productPrice">Product Price </label>
+      <label htmlFor="productPrice">Product Price $ </label>
       <input
         id="productPrice"
         type="number"
