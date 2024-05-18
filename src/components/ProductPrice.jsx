@@ -14,6 +14,7 @@ const ProductPrice = ({currency,setProductPrice}) => {
         type="number"
         placeholder="Amount in Doller $"
         onChange={handleChange}
+        className="inputMarginPrice"
       />
     </div>
   );

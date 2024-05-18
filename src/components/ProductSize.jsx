@@ -10,6 +10,7 @@ const ProductSize = ({setProductSize}) => {
         type="number"
         placeholder="ml or gm"
         onChange={handleChange}
+        className="inputMarginSize"
       />
     </div>
   );
