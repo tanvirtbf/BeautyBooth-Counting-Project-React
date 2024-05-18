@@ -13,7 +13,7 @@ function App() {
   const [productSize, setProductSize] = useState("");
 
   return (
-    <>
+    <div style={{marginTop:'-300px'}}>
       <div className="bLogo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function App() {
           productSize={productSize}
         />
       </div>
-    </>
+    </div>
   );
 }
 
